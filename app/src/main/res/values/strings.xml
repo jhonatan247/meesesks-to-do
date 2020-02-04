@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Work_list</string>
+    <string name="name_your_list">Name your list:</string>
+    <string name="create">Create</string>
+    <string name="task">Task</string>
+    <string name="name">Name:</string>
+    <string name="description">Description:</string>
+    <string name="date">Date:</string>
+    <string name="hour">Hour:</string>
+    <string name="your_lists">Your lists</string>
+    <string name="task_1">Task 1</string>
+    <string name="your_tasks">Your tasks</string>
+    <string name="characters_prompt">Characters</string>
+
+
+    <string-array name="characters_arrays">
+        <item>Rick Sánchez</item>
+        <item>Morty</item>
+        <item>Summer</item>
+        <item>Beth</item>
+        <item>Jerry</item>
+    </string-array>
+
+
+</resources>
