@@ -50,6 +50,8 @@ public class TaskActivity extends AppCompatActivity {
 
         taskListIndex = getIntent().getIntExtra("TASKS_LIST_INDEX", -1);
         taskIndex = getIntent().getIntExtra("TASK_INDEX", -1);
+
+
     }
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,25 +13,45 @@
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="30dp">
 
-
-        <ListView
+        <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/list_of-list_list_view"
-            ></ListView>
+            android:id="@+id/list_of_list_recycler_view"
+            android:scrollbars="vertical">
 
+        </android.support.v7.widget.RecyclerView>
 
 
     </LinearLayout>
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/add_list_fab"
+
+    <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
+        xmlns:rfal="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_rfal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        rfal:rfal_frame_color="#ffffff"
+        rfal:rfal_frame_alpha="0.7"
         android:layout_gravity="bottom|end"
-        android:layout_margin="15dp"
-        android:onClick="addList"
-        android:src="@android:drawable/ic_input_add" />
-
-
+        >
+        <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton
+            xmlns:rfab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_main_rfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="8dp"
+            rfab:rfab_size="normal"
+            rfab:rfab_drawable="@drawable/meeseeks_box"
+            rfab:rfab_color_normal="#448AFF"
+            rfab:rfab_color_pressed="#448AFF"
+            rfab:rfab_shadow_radius="7dp"
+            rfab:rfab_shadow_color="#999999"
+            rfab:rfab_shadow_dx="0dp"
+            rfab:rfab_shadow_dy="5dp"
+            />
+    </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
 
 </android.support.design.widget.CoordinatorLayout>

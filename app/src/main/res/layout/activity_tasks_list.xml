@@ -11,25 +11,65 @@
         android:layout_height="match_parent"
         android:layout_marginHorizontal="30dp"
         android:layout_marginVertical="30dp"
-        android:orientation="vertical" />
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/task_list_recycler_view"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
 
 
     <ListView
         android:id="@+id/task_list_list_view"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </ListView>
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/add_task_fab"
+    <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout
+        xmlns:rfal="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_rfal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        rfal:rfal_frame_color="#ffffff"
+        rfal:rfal_frame_alpha="0.7"
         android:layout_gravity="bottom|end"
-        android:layout_margin="15dp"
-        android:onClick="addTask"
-        android:src="@android:drawable/ic_input_add" />
+
+        >
+        <com.wangjie.rapidfloatingactionbutton.RapidFloatingActionButton
+            xmlns:rfab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_main_rfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="8dp"
+            rfab:rfab_size="normal"
+            rfab:rfab_drawable="@drawable/rfab__drawable_rfab_default"
+            rfab:rfab_color_normal="#37474f"
+            rfab:rfab_color_pressed="#263238"
+            rfab:rfab_shadow_radius="7dp"
+            rfab:rfab_shadow_color="#999999"
+            rfab:rfab_shadow_dx="0dp"
+            rfab:rfab_shadow_dy="5dp"
+            />
+    </com.wangjie.rapidfloatingactionbutton.RapidFloatingActionLayout>
+
+
+
+
+
+
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UI.NewListActivity" />
+        <activity android:name=".UI.NewListActivity" >
+
+        </activity>
         <activity android:name=".UI.TaskActivity" />
         <activity android:name=".UI.ListOfListsActivity">
             <intent-filter>
@@ -19,13 +21,16 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".UI.TasksListActivity" />
-        <activity android:name=".UI.NewAccountActivity" >
-</activity>
-        <activity android:name=".UI.StartActivity" >
+        <activity android:name=".UI.TasksListActivity">
 
         </activity>
-        <activity android:name=".UI.LoginActivity"></activity>
+
+        <activity android:name=".UI.NewAccountActivity"></activity>
+        <activity android:name=".UI.StartActivity">
+
+
+            </activity>
+        <activity android:name=".UI.LoginActivity" />
     </application>
 
 </manifest>

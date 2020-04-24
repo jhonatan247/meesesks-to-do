@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListOfLists {
 
-    private ArrayList<TasksList> ListOfList;
+    public ArrayList<TasksList> ListOfList;
 
 
     public ListOfLists(){

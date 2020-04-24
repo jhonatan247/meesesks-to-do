@@ -48,7 +48,7 @@ public class CreateListTest {
 
     @Test
     public void createListTest() {
-        ViewInteraction floatingActionButton = onView(withId(R.id.add_list_fab));
+        ViewInteraction floatingActionButton = onView(withId(R.id.pickle_rick_image_button));
 
         floatingActionButton.perform(click());
 
@@ -60,10 +60,10 @@ public class CreateListTest {
 
         createButton.perform(click());
 
-        DataInteraction item = onData(hasToString(startsWith("list1"))).inAdapterView(withId(R.id.list_of_list_list_view)).atPosition(0);
+        DataInteraction item = onData(hasToString(startsWith("list1"))).inAdapterView(withId(R.id.list_of_list_recycler_view)).atPosition(0);
         item.perform(click());
 
-        ViewInteraction addTaskFab = onView(withId(R.id.add_task_fab));
+        ViewInteraction addTaskFab = onView(withId(R.id.meeseeks_box_image_button));
 
         addTaskFab.perform(click());
 
